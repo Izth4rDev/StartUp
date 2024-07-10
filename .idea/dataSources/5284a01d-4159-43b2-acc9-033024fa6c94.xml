@@ -1030,7 +1030,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="299" parent="1" name="db_collaborator">
-      <LastIntrospectionLocalTimestamp>2024-07-09.16:26:44</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-07-10.15:53:08</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="300" parent="1" name="ddbb_gimnasios">
@@ -1086,109 +1086,107 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="315" parent="299" name="user">
+    <table id="315" parent="299" name="cars">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="316" parent="299" name="user_roles">
+    <table id="316" parent="299" name="roles">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="317" parent="314" name="id_address">
-      <AutoIncrement>1</AutoIncrement>
+    <table id="317" parent="299" name="supplier">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="318" parent="299" name="user">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="319" parent="299" name="user_roles">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="320" parent="314" name="id_address">
+      <AutoIncrement>11</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="318" parent="314" name="address_name">
+    <column id="321" parent="314" name="address_name">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="319" parent="314" name="address_number">
+    <column id="322" parent="314" name="address_number">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="320" parent="314" name="user_id">
+    <column id="323" parent="314" name="user_id">
       <DasType>int|0s</DasType>
       <Position>4</Position>
     </column>
-    <foreign-key id="321" parent="314" name="fk_user_id">
+    <foreign-key id="324" parent="314" name="fk_user_id">
       <ColNames>user_id</ColNames>
       <RefColNames>id_user</RefColNames>
       <RefTableName>user</RefTableName>
     </foreign-key>
-    <index id="322" parent="314" name="PRIMARY">
+    <index id="325" parent="314" name="PRIMARY">
       <ColNames>id_address</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="323" parent="314" name="fk_user_id">
+    <index id="326" parent="314" name="fk_user_id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="324" parent="314" name="PRIMARY">
+    <key id="327" parent="314" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="325" parent="315" name="id_user">
+    <column id="328" parent="315" name="id_car">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="326" parent="315" name="mail">
+    <column id="329" parent="315" name="car_name">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="327" parent="315" name="created_at">
-      <DasType>datetime|0s</DasType>
+    <column id="330" parent="315" name="user_id">
+      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="328" parent="315" name="nick">
-      <DasType>varchar(25)|0s</DasType>
+    <column id="331" parent="315" name="supplier_id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="329" parent="315" name="name">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <column id="330" parent="315" name="password">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-    </column>
-    <column id="331" parent="315" name="weight">
-      <DasType>varchar(10)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>7</Position>
-    </column>
-    <column id="332" parent="315" name="updated_at">
-      <DasType>datetime|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>8</Position>
-    </column>
-    <column id="333" parent="315" name="role_id">
-      <DasType>int|0s</DasType>
-      <Position>9</Position>
-    </column>
-    <foreign-key id="334" parent="315" name="fk_role_id">
-      <ColNames>role_id</ColNames>
-      <RefColNames>id_role</RefColNames>
-      <RefTableName>user_roles</RefTableName>
+    <foreign-key id="332" parent="315" name="fk_user_id_car">
+      <ColNames>user_id</ColNames>
+      <RefColNames>id_user</RefColNames>
+      <RefTableName>user</RefTableName>
     </foreign-key>
-    <index id="335" parent="315" name="PRIMARY">
-      <ColNames>id_user</ColNames>
+    <foreign-key id="333" parent="315" name="fk_supplier_id">
+      <ColNames>supplier_id</ColNames>
+      <RefColNames>id_supplier</RefColNames>
+      <RefTableName>supplier</RefTableName>
+    </foreign-key>
+    <index id="334" parent="315" name="PRIMARY">
+      <ColNames>id_car</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="336" parent="315" name="fk_role_id">
-      <ColNames>role_id</ColNames>
+    <index id="335" parent="315" name="fk_user_id_car">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="336" parent="315" name="fk_supplier_id">
+      <ColNames>supplier_id</ColNames>
       <Type>btree</Type>
     </index>
     <key id="337" parent="315" name="PRIMARY">
@@ -1217,5 +1215,103 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
+    <column id="342" parent="317" name="id_supplier">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="343" parent="317" name="supplier_name">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <index id="344" parent="317" name="PRIMARY">
+      <ColNames>id_supplier</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="345" parent="317" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="346" parent="318" name="id_user">
+      <AutoIncrement>12</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="347" parent="318" name="mail">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="348" parent="318" name="created_at">
+      <DasType>datetime|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="349" parent="318" name="nick">
+      <DasType>varchar(25)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="350" parent="318" name="name">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="351" parent="318" name="password">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="352" parent="318" name="weight">
+      <DasType>varchar(10)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="353" parent="318" name="updated_at">
+      <DasType>datetime|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <index id="354" parent="318" name="PRIMARY">
+      <ColNames>id_user</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="355" parent="318" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="356" parent="319" name="role_id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="357" parent="319" name="user_id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <foreign-key id="358" parent="319" name="fk_role_id">
+      <ColNames>role_id</ColNames>
+      <RefColNames>id_role</RefColNames>
+      <RefTableName>roles</RefTableName>
+    </foreign-key>
+    <foreign-key id="359" parent="319" name="fk_user_id_role">
+      <ColNames>user_id</ColNames>
+      <RefColNames>id_user</RefColNames>
+      <RefTableName>user</RefTableName>
+    </foreign-key>
+    <index id="360" parent="319" name="fk_role_id">
+      <ColNames>role_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="361" parent="319" name="fk_user_id_role">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
   </database-model>
 </dataSource>

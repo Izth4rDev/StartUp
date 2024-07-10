@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RoleDaoImp implements IRoleDao {
-    private static final String SELECT_ALL_ROLES = "SELECT id_role, role_name FROM user_roles";
+    private static final String SELECT_ALL_ROLES = "SELECT id_role, role_name FROM roles";
 
     @Override
     public List<Role> getAllRoles() {

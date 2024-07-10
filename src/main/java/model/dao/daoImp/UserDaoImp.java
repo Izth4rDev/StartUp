@@ -2,11 +2,10 @@ package model.dao.daoImp;
 import model.connection.MysqlConnection;
 import model.dao.IUserDao;
 import model.models.User;
-
 import java.sql.*;
 
 public class UserDaoImp implements IUserDao {
-    private static final String INSERT_USER = "INSERT INTO user(mail, created_at, nick, name, password, weight, updated_at, role_id) VALUES (?,?,?,?,?,?,?,?)";
+    private static final String INSERT_USER = "INSERT INTO user(mail, created_at, nick, name, password, weight, updated_at) VALUES (?,?,?,?,?,?,?)";
     @Override
     public User getUser(int id) {
         return null;
@@ -24,7 +23,6 @@ public class UserDaoImp implements IUserDao {
             ps.setString(5, user.getPassword());
             ps.setString(6, user.getWeight());
             ps.setDate(7, new Date(user.getUpdated_at().getTime()));
-            ps.setInt(8, user.getRole_id());
 
             int affectedRows =  ps.executeUpdate();
 

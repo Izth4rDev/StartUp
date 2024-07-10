@@ -10,40 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="150d89bf-89cf-4939-921d-1d6e147c7123" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/RolSerV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/UserServ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/connection/MysqlConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/IAddressDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/IRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/AddressDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/RoleDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/IRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/RolServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/registro.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/IUserRoleDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserRoleDaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5284a01d-4159-43b2-acc9-033024fa6c94.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5284a01d-4159-43b2-acc9-033024fa6c94.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserServ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserServ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/RoleDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/RoleDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/models/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/models/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/models/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 10.1.241.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/miguelrondanelli/IdeaProjects/StartUp",
     "node.js.detected.package.eslint": "true",
@@ -180,6 +160,7 @@
       <updated>1720538691679</updated>
       <workItem from="1720538692797" duration="643000" />
       <workItem from="1720539518579" duration="30272000" />
+      <workItem from="1720573801940" duration="10102000" />
     </task>
     <servers />
   </component>

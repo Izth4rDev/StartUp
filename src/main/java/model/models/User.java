@@ -2,10 +2,13 @@ package model.models;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@ToString
 
 public class User {
     private int user_id;
@@ -16,5 +19,4 @@ public class User {
     private String password;
     private String weight;
     private Date updated_at;
-    private int role_id;
 }

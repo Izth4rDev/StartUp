@@ -1,4 +1,5 @@
 package model.models;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,8 +10,7 @@ import lombok.ToString;
 @Data
 @ToString
 
-
-public class Role {
-    private int id_role;
-    private String role_name;
+public class UserRole {
+    private int user_id;
+    private int role_id;
 }

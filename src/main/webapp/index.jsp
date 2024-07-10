@@ -1,4 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -10,8 +12,18 @@
 </head>
 <body>
 
-<button>Logearse</button>
+<a class="btn btn-warning">Logearse</a>
+
 <a class="btn btn-primary" href="rolserv">Registrarse</a>
+
+<c:if test="${userResp}">
+    <div class="container mx-auto text-center">
+        <h3 class="text-success">${message}</h3>
+        <p>${userAdded.name}</p>
+        <p>${userAdded.mail}</p>
+        <p>${userAdded.weight}</p>
+    </div>
+</c:if>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

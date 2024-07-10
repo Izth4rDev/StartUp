@@ -1,21 +1,26 @@
 package controller;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.models.Address;
 import model.models.User;
+import model.models.UserRole;
 import model.service.serviceImp.UserServiceImp;
 
+import java.io.IOException;
 import java.util.Date;
 
 @WebServlet("/user")
 public class UserServ extends HttpServlet {
     private UserServiceImp userService = new UserServiceImp();
 
-    protected void doPost(HttpServletRequest req, HttpServletResponse res){
+    protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         User user = new User();
         Address address = new Address();
+        UserRole userRole = new UserRole();
+        Boolean userResp;
 
         //campos del user
         String name = req.getParameter("nameUser");
@@ -35,7 +40,6 @@ public class UserServ extends HttpServlet {
         user.setNick(nick);
         user.setPassword(password);
         user.setWeight(weight);
-        user.setRole_id(role_id);
         Date now = new Date();
         user.setCreated_at(now);
         user.setUpdated_at(now);
@@ -44,6 +48,20 @@ public class UserServ extends HttpServlet {
         address.setAddress_name(addressName);
         address.setAddress_number(addressNum);
 
-        userService.insertUserAddress(user, address);
+        //Objeto UserRole
+        userRole.setRole_id(role_id);
+
+        userResp = userService.insertUserAddress(user, address, userRole);
+
+        if(userResp){
+            req.setAttribute("userAdded", user);
+            req.setAttribute("message", "Usuario creado exitosamente");
+            req.setAttribute("userResp", userResp);
+        }else{
+            req.setAttribute("message","usuario no se pudo crear");
+        }
+
+        req.getRequestDispatcher("index.jsp").forward(req,res);
+
     }
 }
