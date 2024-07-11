@@ -1030,7 +1030,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="299" parent="1" name="db_collaborator">
-      <LastIntrospectionLocalTimestamp>2024-07-11.00:53:20</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-07-11.20:57:33</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="300" parent="1" name="ddbb_gimnasios">
@@ -1107,7 +1107,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="320" parent="314" name="id_address">
-      <AutoIncrement>11</AutoIncrement>
+      <AutoIncrement>18</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1146,7 +1146,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="328" parent="315" name="id_car">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>15</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1166,150 +1166,154 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="332" parent="315" name="fk_user_id_car">
+    <column id="332" parent="315" name="url">
+      <DasType>varchar(300)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="333" parent="315" name="fk_user_id_car">
       <ColNames>user_id</ColNames>
       <RefColNames>id_user</RefColNames>
       <RefTableName>user</RefTableName>
     </foreign-key>
-    <foreign-key id="333" parent="315" name="fk_supplier_id">
+    <foreign-key id="334" parent="315" name="fk_supplier_id">
       <ColNames>supplier_id</ColNames>
       <RefColNames>id_supplier</RefColNames>
       <RefTableName>supplier</RefTableName>
     </foreign-key>
-    <index id="334" parent="315" name="PRIMARY">
+    <index id="335" parent="315" name="PRIMARY">
       <ColNames>id_car</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="335" parent="315" name="fk_user_id_car">
+    <index id="336" parent="315" name="fk_user_id_car">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="336" parent="315" name="fk_supplier_id">
+    <index id="337" parent="315" name="fk_supplier_id">
       <ColNames>supplier_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="337" parent="315" name="PRIMARY">
+    <key id="338" parent="315" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="338" parent="316" name="id_role">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="339" parent="316" name="id_role">
+      <AutoIncrement>5</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="339" parent="316" name="role_name">
+    <column id="340" parent="316" name="role_name">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="340" parent="316" name="PRIMARY">
+    <index id="341" parent="316" name="PRIMARY">
       <ColNames>id_role</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="341" parent="316" name="PRIMARY">
+    <key id="342" parent="316" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="342" parent="317" name="id_supplier">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="343" parent="317" name="id_supplier">
+      <AutoIncrement>8</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="343" parent="317" name="supplier_name">
+    <column id="344" parent="317" name="supplier_name">
       <DasType>varchar(50)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="344" parent="317" name="PRIMARY">
+    <index id="345" parent="317" name="PRIMARY">
       <ColNames>id_supplier</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="345" parent="317" name="PRIMARY">
+    <key id="346" parent="317" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="346" parent="318" name="id_user">
-      <AutoIncrement>12</AutoIncrement>
+    <column id="347" parent="318" name="id_user">
+      <AutoIncrement>19</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="347" parent="318" name="mail">
+    <column id="348" parent="318" name="mail">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="348" parent="318" name="created_at">
+    <column id="349" parent="318" name="created_at">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="349" parent="318" name="nick">
+    <column id="350" parent="318" name="nick">
       <DasType>varchar(25)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="350" parent="318" name="name">
+    <column id="351" parent="318" name="name">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="351" parent="318" name="password">
+    <column id="352" parent="318" name="password">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="352" parent="318" name="weight">
+    <column id="353" parent="318" name="weight">
       <DasType>varchar(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="353" parent="318" name="updated_at">
+    <column id="354" parent="318" name="updated_at">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <index id="354" parent="318" name="PRIMARY">
+    <index id="355" parent="318" name="PRIMARY">
       <ColNames>id_user</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="355" parent="318" name="PRIMARY">
+    <key id="356" parent="318" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="356" parent="319" name="role_id">
+    <column id="357" parent="319" name="role_id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="357" parent="319" name="user_id">
+    <column id="358" parent="319" name="user_id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="358" parent="319" name="fk_role_id">
+    <foreign-key id="359" parent="319" name="fk_role_id">
       <ColNames>role_id</ColNames>
       <RefColNames>id_role</RefColNames>
       <RefTableName>roles</RefTableName>
     </foreign-key>
-    <foreign-key id="359" parent="319" name="fk_user_id_role">
+    <foreign-key id="360" parent="319" name="fk_user_id_role">
       <ColNames>user_id</ColNames>
       <RefColNames>id_user</RefColNames>
       <RefTableName>user</RefTableName>
     </foreign-key>
-    <index id="360" parent="319" name="fk_role_id">
+    <index id="361" parent="319" name="fk_role_id">
       <ColNames>role_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="361" parent="319" name="fk_user_id_role">
+    <index id="362" parent="319" name="fk_user_id_role">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>

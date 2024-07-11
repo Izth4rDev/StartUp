@@ -1,7 +1,7 @@
 package model.dao;
-import model.models.UserCarList;
+import model.models.UserCarListDTO;
 import java.util.List;
 
 public interface IUserCarlistDao{
-    public List<UserCarList> getAllCarList();
+    public List<UserCarListDTO> getAllCarList();
 }

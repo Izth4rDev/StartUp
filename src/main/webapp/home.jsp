@@ -28,35 +28,38 @@
 
 <h2 class="text-center text-primary mt-5">Lista de vehiculos y usuarios</h2>
 <div class="container mx-auto my-5">
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Nick</th>
-            <th scope="col">Correo</th>
-            <th scope="col">Peso</th>
-            <th scope="col">Rol</th>
-            <th scope="col">Direccion</th>
-            <th scope="col">Numero</th>
-            <th scope="col">Auto</th>
-        </tr>
-        </thead>
-        <tbody>
-        <c:forEach var="carList" items="${uclList}">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
             <tr>
-                <td>${carList.name}</td>
-                <td>${carList.nick}</td>
-                <td>${carList.mail}</td>
-                <td>${carList.weight}</td>
-                <td>${carList.role_name}</td>
-                <td>${carList.role_name}</td>
-                <td>${carList.address_name}</td>
-                <td>${carList.address_number}</td>
-                <td>${carList.car_name}</td>
+                <th scope="col">Nombre</th>
+                <th scope="col">Nick</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Peso</th>
+                <th scope="col">Rol</th>
+                <th scope="col">Direccion</th>
+                <th scope="col">Numero</th>
+                <th scope="col">Auto</th>
+                <th scope="col">imagen</th>
             </tr>
-        </c:forEach>
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            <c:forEach var="carList" items="${uclList}">
+                <tr>
+                    <td>${carList.name}</td>
+                    <td>${carList.nick}</td>
+                    <td>${carList.mail}</td>
+                    <td>${carList.weight}</td>
+                    <td>${carList.role_name}</td>
+                    <td>${carList.address_name}</td>
+                    <td>${carList.address_number}</td>
+                    <td>${carList.car_name}</td>
+                    <td><img style="width: 120px; height: 80px;" src="${carList.url}" alt="imagen vehiculo"></td>
+                </tr>
+            </c:forEach>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <h2 class="text-center text-primary">Lista de Proveedores</h2>

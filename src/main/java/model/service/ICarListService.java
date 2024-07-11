@@ -1,7 +1,7 @@
 package model.service;
-import model.models.UserCarList;
+import model.models.UserCarListDTO;
 import java.util.List;
 
 public interface ICarListService {
-    public List<UserCarList> getCarList();
+    public List<UserCarListDTO> getCarList();
 }

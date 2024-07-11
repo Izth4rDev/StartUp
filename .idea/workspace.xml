@@ -10,8 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="150d89bf-89cf-4939-921d-1d6e147c7123" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/ICarDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/CarDaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5284a01d-4159-43b2-acc9-033024fa6c94.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5284a01d-4159-43b2-acc9-033024fa6c94.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginServ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginServ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RolSerV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/RolSuppSerV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserServ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserServ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/IUserCarlistDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/IUserCarlistDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/SupplierDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/SupplierDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserCarListDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserCarListDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/models/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/models/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/models/UserCarList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/models/UserCarListDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/ICarListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/ICarListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/LoginImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/LoginImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserCarListImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserCarListImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registro.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +42,8 @@
       <list>
         <option value="package-info" />
         <option value="Jsp File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -188,7 +207,7 @@
       <updated>1720538691679</updated>
       <workItem from="1720538692797" duration="643000" />
       <workItem from="1720539518579" duration="30272000" />
-      <workItem from="1720573801940" duration="45026000" />
+      <workItem from="1720573801940" duration="56479000" />
     </task>
     <servers />
   </component>

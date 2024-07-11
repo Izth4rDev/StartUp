@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Hello, world!</title>
+    <title>Sistema gestion de vehiculos</title>
 </head>
 <body>
 
@@ -50,14 +50,14 @@
 
     <c:if test="${userResp}">
         <div class="container mx-auto text-center">
-            <h3 class="text-success">${message}</h3>
+            <h3 class="text-primary text-center">${messageUsr}</h3>
             <p>${userAdded.name}</p>
             <p>${userAdded.mail}</p>
             <p>${userAdded.weight}</p>
         </div>
     </c:if>
 
-    <p class="text-danger">${messageUsr}</p>
+    <p class="text-danger">${message}</p>
 </div>
 
 

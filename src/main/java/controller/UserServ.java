@@ -4,11 +4,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.models.Address;
-import model.models.User;
-import model.models.UserRole;
+import model.models.*;
 import model.service.serviceImp.UserServiceImp;
-
 import java.io.IOException;
 import java.util.Date;
 
@@ -17,9 +14,12 @@ public class UserServ extends HttpServlet {
     private UserServiceImp userService = new UserServiceImp();
 
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        //Objetos del modelo
         User user = new User();
         Address address = new Address();
         UserRole userRole = new UserRole();
+        Car car = new Car();
+
         Boolean userResp;
 
         //campos del user
@@ -28,13 +28,22 @@ public class UserServ extends HttpServlet {
         String nick = req.getParameter("nick");
         String password = req.getParameter("pass");
         String weight = req.getParameter("weight");
+
+        //Campos del rol
         int role_id = Integer.parseInt(req.getParameter("role"));
 
         //Campos de direccion
         String addressName = req.getParameter("addressName");
         int addressNum = Integer.parseInt(req.getParameter("addressNum"));
 
-        //Objeto model user
+        //campos de auto
+        String url = req.getParameter("urlCar");
+        String car_name = req.getParameter("car");
+
+        //campo proveedor
+        int supplier_id = Integer.parseInt(req.getParameter("supplier"));
+
+        //Seteo Objeto model user
         user.setName(name);
         user.setMail(mail);
         user.setNick(nick);
@@ -44,14 +53,19 @@ public class UserServ extends HttpServlet {
         user.setCreated_at(now);
         user.setUpdated_at(now);
 
-        //Objeto model Address
+        //Seteo Objeto model Address
         address.setAddress_name(addressName);
         address.setAddress_number(addressNum);
 
-        //Objeto UserRole
+        //Seteo Objeto UserRole
         userRole.setRole_id(role_id);
 
-        userResp = userService.insertUserAddress(user, address, userRole);
+        //Seteo del objeto car
+        car.setCar_name(car_name);
+        car.setUrl(url);
+        car.setSupplier_id(supplier_id);
+
+        userResp = userService.insertUserAddress(user, address, userRole, car);
 
         if(userResp){
             req.setAttribute("userAdded", user);

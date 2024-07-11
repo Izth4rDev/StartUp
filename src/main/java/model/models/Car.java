@@ -1,4 +1,5 @@
 package model.models;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,10 @@ import lombok.ToString;
 @Data
 @ToString
 
-public class Supplier {
-    private int id_supplier;
-    private String supplier_name;
+public class Car {
+    private int id_car;
+    private String car_name;
+    private String url;
+    private int user_id;
+    private int supplier_id;
 }

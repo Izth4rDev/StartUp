@@ -9,7 +9,7 @@ import lombok.ToString;
 @Data
 @ToString
 
-public class UserCarList {
+public class UserCarListDTO {
     private String name;
     private String nick;
     private String mail;
@@ -18,4 +18,5 @@ public class UserCarList {
     private String address_name;
     private int  address_number;
     private String car_name;
+    private String url;
 }

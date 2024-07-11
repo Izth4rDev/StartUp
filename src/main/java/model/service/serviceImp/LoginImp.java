@@ -6,8 +6,8 @@ import model.models.UserRoleAuthDTO;
 import model.service.ILogin;
 
 public class LoginImp implements ILogin {
-    private LoginDaoImp loginDaoImp = new LoginDaoImp();
-    private UserRoleAuthDaoImp uraDaoImp = new UserRoleAuthDaoImp();
+    private final LoginDaoImp loginDaoImp = new LoginDaoImp();
+    private final UserRoleAuthDaoImp uraDaoImp = new UserRoleAuthDaoImp();
 
     @Override
     public UserRoleAuthDTO validateLogin(LoginDTO loginDTO) {

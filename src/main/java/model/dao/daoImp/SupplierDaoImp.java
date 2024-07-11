@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SupplierDaoImp implements ISupplierDao {
-    private static final String SELECT_SUPPLIER = "SELECT supplier_name FROM supplier";
+    private static final String SELECT_SUPPLIER = "SELECT id_supplier, supplier_name FROM supplier";
     @Override
     public List<Supplier> getAllSuppliers() {
         List<Supplier> suppliers = new ArrayList<>();
@@ -22,6 +22,7 @@ public class SupplierDaoImp implements ISupplierDao {
 
             while(rs.next()){
                 Supplier supplier = new Supplier();
+                supplier.setId_supplier(rs.getInt("id_supplier"));
                 supplier.setSupplier_name(rs.getString("supplier_name"));
                 suppliers.add(supplier);
             }

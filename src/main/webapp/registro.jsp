@@ -50,6 +50,24 @@
         </div>
 
         <div class="mb-3">
+            <label class="form-label" for="car">Auto</label>
+            <input class="form-control" type="text" name="car" id="car" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="urlCar">Url de la Imagen del auto</label>
+            <input class="form-control" type="text" name="urlCar" id="urlCar" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="supplier">Rol</label>
+            <select class="form-select" name="supplier" id="supplier">
+                <option selected>Selecciona un proveedor</option>
+                <c:forEach var="supplier" items="${supplier}" >
+                    <option value="${supplier.id_supplier}">${supplier.supplier_name}</option>
+                </c:forEach>
+                <!-- aqui los proveedores cargados de la bd-->
+            </select>
+        </div>
+        <div class="mb-3">
             <label class="form-label" for="role">Rol</label>
             <select class="form-select" name="role" id="role">
                 <option selected>Selecciona un Rol</option>
