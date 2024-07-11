@@ -55,10 +55,10 @@ public class UserServ extends HttpServlet {
 
         if(userResp){
             req.setAttribute("userAdded", user);
-            req.setAttribute("message", "Usuario creado exitosamente");
+            req.setAttribute("messageUsr", "Usuario creado exitosamente");
             req.setAttribute("userResp", userResp);
         }else{
-            req.setAttribute("message","usuario no se pudo crear");
+            req.setAttribute("messageUsr","usuario no se pudo crear");
         }
 
         req.getRequestDispatcher("index.jsp").forward(req,res);

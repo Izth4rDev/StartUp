@@ -60,6 +60,7 @@
             </select>
         </div>
         <button class="btn btn-primary" type="submit">Registrar</button>
+       <a href="index.jsp"><button class="btn btn-warning" type="button">Volver</button></a>
     </form>
 </div>
 

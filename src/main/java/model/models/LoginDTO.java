@@ -9,7 +9,7 @@ import lombok.ToString;
 @Data
 @ToString
 
-public class UserRole {
-    private int user_id;
-    private int role_id;
+public class LoginDTO {
+    private String mail;
+    private String password;
 }

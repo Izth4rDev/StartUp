@@ -10,20 +10,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="150d89bf-89cf-4939-921d-1d6e147c7123" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/IUserRoleDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserRoleDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginServ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/ILoginDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/ISupplierDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/IUserCarlistDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/IUserRoleAuthDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/LoginDaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/SupplierDaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserCarListDaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserRoleAuthDaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/Supplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/UserCarList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/UserRoleAuthDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/ICarListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/ILogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/ISupplierService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/LoginImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/SupplierServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserCarListImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5284a01d-4159-43b2-acc9-033024fa6c94.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5284a01d-4159-43b2-acc9-033024fa6c94.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserServ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserServ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/RoleDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/RoleDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/models/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/models/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/models/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/IRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/IRoleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/models/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/models/UserRole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registro.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +47,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="package-info" />
+        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -80,6 +94,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -105,7 +123,40 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57285" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -160,11 +211,15 @@
       <updated>1720538691679</updated>
       <workItem from="1720538692797" duration="643000" />
       <workItem from="1720539518579" duration="30272000" />
-      <workItem from="1720573801940" duration="10102000" />
+      <workItem from="1720573801940" duration="41909000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

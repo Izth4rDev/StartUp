@@ -1030,7 +1030,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="299" parent="1" name="db_collaborator">
-      <LastIntrospectionLocalTimestamp>2024-07-10.15:53:08</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-07-11.00:53:20</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="300" parent="1" name="ddbb_gimnasios">
