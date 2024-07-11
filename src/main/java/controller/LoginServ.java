@@ -37,16 +37,16 @@ public class LoginServ extends HttpServlet {
 
         if(usrAuth.getEval().equals("adm")){
 
-            req.setAttribute("message", "Login exitoso");
+            req.setAttribute("messageUsr", "Login exitoso");
             req.setAttribute("uclList", ucList);
             req.setAttribute("suppList",suppList);
             req.setAttribute("user", usrAuth);
             req.getRequestDispatcher("home.jsp").forward(req,res);
 
         }else if(usrAuth.getEval().equals("others")){
-            req.setAttribute("message", "No eres admin, no tienes acceso");
+            req.setAttribute("messageUsr", "No eres admin, no tienes acceso");
         }else{
-            req.setAttribute("message", "Error al Logearse, no existe usuario o contraseña incorrecta");
+            req.setAttribute("messageUsr", "Error al Logearse, no existe usuario o contraseña incorrecta");
         }
         req.getRequestDispatcher("index.jsp").forward(req,res);
     }

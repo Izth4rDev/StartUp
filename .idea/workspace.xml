@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="startup:war" />
+      <artifact name="startup:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="150d89bf-89cf-4939-921d-1d6e147c7123" name="Changes" comment="" />
+    <list default="true" id="150d89bf-89cf-4939-921d-1d6e147c7123" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginServ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginServ.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +37,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -182,7 +188,7 @@
       <updated>1720538691679</updated>
       <workItem from="1720538692797" duration="643000" />
       <workItem from="1720539518579" duration="30272000" />
-      <workItem from="1720573801940" duration="43024000" />
+      <workItem from="1720573801940" duration="45026000" />
     </task>
     <servers />
   </component>
