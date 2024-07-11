@@ -2,43 +2,14 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="startup:war exploded" />
+      <artifact name="startup:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="150d89bf-89cf-4939-921d-1d6e147c7123" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/LoginServ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/ILoginDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/ISupplierDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/IUserCarlistDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/IUserRoleAuthDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/LoginDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/SupplierDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserCarListDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/dao/daoImp/UserRoleAuthDaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/LoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/Supplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/UserCarList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/models/UserRoleAuthDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/ICarListService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/ILogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/ISupplierService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/LoginImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/SupplierServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserCarListImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5284a01d-4159-43b2-acc9-033024fa6c94.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5284a01d-4159-43b2-acc9-033024fa6c94.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserServ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserServ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/dao/IRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/dao/IRoleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/models/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/models/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/service/serviceImp/UserServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registro.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="150d89bf-89cf-4939-921d-1d6e147c7123" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +182,7 @@
       <updated>1720538691679</updated>
       <workItem from="1720538692797" duration="643000" />
       <workItem from="1720539518579" duration="30272000" />
-      <workItem from="1720573801940" duration="41909000" />
+      <workItem from="1720573801940" duration="43024000" />
     </task>
     <servers />
   </component>
